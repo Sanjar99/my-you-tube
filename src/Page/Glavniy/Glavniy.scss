@@ -1,0 +1,12 @@
+.Glavniy{
+  background-color: #17171E;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 108vh;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

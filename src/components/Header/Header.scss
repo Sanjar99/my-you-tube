@@ -1,0 +1,105 @@
+.header{
+  width: 1537px;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+  position: fixed;
+  background-color: #17171E;
+  height: 100px;
+  z-index: 5;
+  margin: 0 auto;
+  &__side{
+    display: flex;
+    margin-right: 60px;
+    align-items: center;
+  }
+  &__side-hamburger{
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color:transparent ;
+    margin-right: 28px;
+    left: 30px;
+    top: 30px;
+    &:focus{
+      outline: none;
+    }
+    &::after,
+    &::before,
+    &-inner{
+      content: '';
+      width: 20px;
+      height: 3px;
+      background: #fff;
+      display: block;
+      margin-bottom: 4px;
+      border-radius: 15px;
+    }
+    &-inner::before{
+      position: relative;
+      top: 3px;
+    }
+    &-inner::after{
+      position: relative;
+      top: -3px;
+    }
+  }
+  &__search-span{
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    top: 38px;
+    left: 720px;
+    z-index: 5;
+  }
+  &__search{
+    display: block;
+    background: #2C2C32;
+    mix-blend-mode: normal;
+    border-radius: 22px;
+    width: 500px;
+    border: transparent;
+    padding: 12px;
+    color:#fff;
+    margin-right: auto;
+    &::placeholder{
+      padding: 12px 500px 12px 23px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      mix-blend-mode: normal;
+      opacity: 0.4;
+    }
+    
+  }
+  &__icons{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  &__icon{
+    margin-right: 50px;
+    color: #747478;
+    mix-blend-mode: normal;
+    width: 27px;
+    height: 26px;
+    &:hover{
+      color: red;
+    }
+  }
+  .header__icon--user{
+    width: 40px;
+    height: 40px;
+    border: 3px solid transparent;
+    margin-right: 0px;
+    &:hover{
+      border: 3px dashed red;
+      border-radius: 50%;
+    }
+  }
+ 
+}
